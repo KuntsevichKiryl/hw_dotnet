@@ -6,21 +6,42 @@ namespace HW03_01.Operators
     {
         static void Main(string[] args)
         {
-            double a = ReadInput("input a");
-            double b = ReadInput("input b");
-            double d = ReadInput("input result");
+            double a = ReadVar("input a");
+            double b = ReadVar("input b");
+            double c = Action("what to do + or -", a, b);
+            double d = ReadVar("input result");
 
-            double c = Sum(a, b);
             if (d == c)
             {
                 Console.WriteLine("right");
                 return;
             }
-            Console.WriteLine("wrong");
+            if (d < c)
+            {
+                Console.WriteLine("wrong, must be greater");
+                return;
+            }
+
+            Console.WriteLine("wrong, must be less");
 
         }
 
-        private static double ReadInput(string text)
+        private static double Action(string text, double a, double b)
+        {
+            Console.WriteLine(text);
+            string action = Console.ReadLine();
+            switch (action)
+            {
+                case "+": return Sum(a, b);
+                case "-": return (a - b);
+                default:
+                    Console.WriteLine("incorrect action");
+                    System.Environment.Exit(1);
+                    return double.NaN;
+            }
+        }
+
+        private static double ReadVar(string text)
         {
             try
             {
