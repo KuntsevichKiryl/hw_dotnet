@@ -8,9 +8,16 @@ namespace HW03_01.Operators
         {
             double a = ReadInput("input a");
             double b = ReadInput("input b");
+            double d = ReadInput("input result");
 
             double c = Sum(a, b);
-            Console.WriteLine($"a + b = {c}");
+            if (d == c)
+            {
+                Console.WriteLine("right");
+                return;
+            }
+            Console.WriteLine("wrong");
+
         }
 
         private static double ReadInput(string text)
