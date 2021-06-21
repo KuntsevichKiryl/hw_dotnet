@@ -41,8 +41,6 @@ namespace HW02_05.Quadratic.Formula
             double x2 = (-b - Math.Sqrt(D)) / (2 * a);
 
             Console.WriteLine($"Первый корень: {x1} \nВторой корень: {x2}");
-
-
         }
     }
 }
