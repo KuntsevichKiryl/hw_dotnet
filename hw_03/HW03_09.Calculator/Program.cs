@@ -51,15 +51,11 @@ namespace HW03_09.Calculator
             {
                 return Math.PI * Math.Pow(r, 2);
             }
-
             else
             {
                 Console.WriteLine("Incorrect radius");
                 return double.NaN;
             }
-
         }
-
     }
-
 }
