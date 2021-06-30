@@ -15,6 +15,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HW05_01", "hw_05\HW05_01\HW
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HW05_02", "hw_05\HW05_02\HW05_02.csproj", "{E4213ADC-41F4-42F8-8DC6-5DDF3B40F433}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HW05_03", "hw_05\HW05_03\HW05_03.csproj", "{F443DB2B-3813-4F82-9432-4F3CAC7121BF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -97,6 +99,18 @@ Global
 		{E4213ADC-41F4-42F8-8DC6-5DDF3B40F433}.Release|x64.Build.0 = Release|Any CPU
 		{E4213ADC-41F4-42F8-8DC6-5DDF3B40F433}.Release|x86.ActiveCfg = Release|Any CPU
 		{E4213ADC-41F4-42F8-8DC6-5DDF3B40F433}.Release|x86.Build.0 = Release|Any CPU
+		{F443DB2B-3813-4F82-9432-4F3CAC7121BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F443DB2B-3813-4F82-9432-4F3CAC7121BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F443DB2B-3813-4F82-9432-4F3CAC7121BF}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{F443DB2B-3813-4F82-9432-4F3CAC7121BF}.Debug|x64.Build.0 = Debug|Any CPU
+		{F443DB2B-3813-4F82-9432-4F3CAC7121BF}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{F443DB2B-3813-4F82-9432-4F3CAC7121BF}.Debug|x86.Build.0 = Debug|Any CPU
+		{F443DB2B-3813-4F82-9432-4F3CAC7121BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F443DB2B-3813-4F82-9432-4F3CAC7121BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F443DB2B-3813-4F82-9432-4F3CAC7121BF}.Release|x64.ActiveCfg = Release|Any CPU
+		{F443DB2B-3813-4F82-9432-4F3CAC7121BF}.Release|x64.Build.0 = Release|Any CPU
+		{F443DB2B-3813-4F82-9432-4F3CAC7121BF}.Release|x86.ActiveCfg = Release|Any CPU
+		{F443DB2B-3813-4F82-9432-4F3CAC7121BF}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
