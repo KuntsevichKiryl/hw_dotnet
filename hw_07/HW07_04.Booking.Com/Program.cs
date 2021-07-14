@@ -13,7 +13,7 @@ namespace HW07_04.Booking.Com
 
             if (basicPers.Login())
             {
-                data[0] = basicPers.persArray[basicPers.position].name;
+                data[0] = basicPers.persArray[basicPers.position].Name;
                 string city = "Moscow";
                 DateTime arrive = DateTime.Parse("2021/10/1");
                 DateTime leave = DateTime.Parse("2021/10/11");

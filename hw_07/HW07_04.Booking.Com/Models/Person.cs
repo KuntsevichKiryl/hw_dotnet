@@ -8,12 +8,34 @@ namespace HW07_04.Booking.Com.Models
 {
     class Person
     {
-        public string name;
-        public string password;
+        string _name;
+        internal string Name
+        {
+            get
+            {
+                return _name;
+            }
+            private set
+            {
+                _name = value;
+            }
+        }
+        string _password;
+        internal string Password
+        {
+            get
+            {
+                return _password;
+            }
+            private set
+            {
+                _password = value;
+            }
+        }
         public Person(string login, string pass)
         {
-            name = login;
-            password = pass;
+            Name = login;
+            Password = pass;
         }
     }
 }

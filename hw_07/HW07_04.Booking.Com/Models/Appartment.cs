@@ -8,28 +8,117 @@ namespace HW07_04.Booking.Com.Models
 {
     class Appartment
     {
-        public string city;
-        public DateTime arriveDate;
-        public DateTime leaveDate;
-        public int numOfPerson;
-        public int numOfChild;
-        public int numOfRoom;
-        public int basePrice;
-        public int wholePrice;
+        string _city;
+        internal string City
+        {
+            get
+            {
+                return _city;
+            }
+            set
+            {
+                _city = value;
+            }
+        }
+        DateTime _arriveDate;
+        internal DateTime ArriveDate
+        {
+            get
+            {
+                return _arriveDate;
+            }
+            set
+            {
+                _arriveDate = value;
+            }
+        }
+        DateTime _leaveDate;
+        internal DateTime LeaveDate
+        {
+            get
+            {
+                return _leaveDate;
+            }
+            set
+            {
+                _leaveDate = value;
+            }
+        }
+
+        int _numOfPerson;
+        internal int NumOfPerson
+        {
+            get
+            {
+                return _numOfPerson;
+            }
+            set
+            {
+                _numOfPerson = value;
+            }
+        }
+        int _numOfChild;
+        internal int NumOfChild
+        {
+            get
+            {
+                return _numOfChild;
+            }
+            set
+            {
+                _numOfChild = value;
+            }
+        }
+        int _numOfRoom;
+        internal int NumOfRoom
+        {
+            get
+            {
+                return _numOfRoom;
+            }
+            set
+            {
+                _numOfRoom = value;
+            }
+        }
+        int _basePrice;
+        internal int BasePrice
+        {
+            get
+            {
+                return _basePrice;
+            }
+            set
+            {
+                _basePrice = value;
+            }
+        }
+        int _wholePrice;
+        internal int WholePrice
+        {
+            get
+            {
+                return _wholePrice;
+            }
+            set
+            {
+                _wholePrice = value;
+            }
+        }
 
         public Appartment(string town, DateTime arrive, DateTime leave, int person, int child, int room, int price)
         {
-            city = town;
-            arriveDate = arrive;
-            leaveDate = leave;
-            numOfPerson = person;
-            numOfChild = child;
-            numOfRoom = room;
-            basePrice = price;
+            City = town;
+            ArriveDate = arrive;
+            LeaveDate = leave;
+            NumOfPerson = person;
+            NumOfChild = child;
+            NumOfRoom = room;
+            BasePrice = price;
         }
         public override string ToString()
         {
-            return $"City - {city}, arrive date - {arriveDate}, leave date - {leaveDate}, maximum number of persons - {numOfPerson}, maximum number of children - {numOfChild}, maximum rooms - {numOfRoom}";
+            return $"City - {City}, arrive date - {ArriveDate}, leave date - {LeaveDate}, maximum number of persons - {NumOfPerson}, maximum number of children - {NumOfChild}, maximum rooms - {NumOfRoom}";
         }
     }
 }

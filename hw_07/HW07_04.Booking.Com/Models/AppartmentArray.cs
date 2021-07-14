@@ -18,23 +18,23 @@ namespace HW07_04.Booking.Com.Models
         {
             for (int i = 0; i < appArray.Length; i++)
             {
-                if (town.Equals(appArray[i].city))
+                if (town.Equals(appArray[i].City))
                 {
-                    if (arrive >= appArray[i].arriveDate && arrive < appArray[i].leaveDate)
+                    if (arrive >= appArray[i].ArriveDate && arrive < appArray[i].LeaveDate)
                     {
-                        if (leave <= appArray[i].leaveDate && leave > appArray[i].arriveDate)
+                        if (leave <= appArray[i].LeaveDate && leave > appArray[i].ArriveDate)
                         {
-                            if (person <= appArray[i].numOfPerson)
+                            if (person <= appArray[i].NumOfPerson)
                             {
-                                if (child <= appArray[i].numOfChild)
+                                if (child <= appArray[i].NumOfChild)
                                 {
-                                    if (room <= appArray[i].numOfRoom)
+                                    if (room <= appArray[i].NumOfRoom)
                                     {
                                         chosenApp[j] = i;
                                         Console.WriteLine("\n{0}. {1}", j + 1, appArray[i].ToString());
                                         j++;
                                         Console.WriteLine("From {0} to {1} it will cost for you - {2}",
-                                            arrive, leave, CalcPrice(arrive, leave, person, appArray[i].basePrice));
+                                            arrive, leave, CalcPrice(arrive, leave, person, appArray[i].BasePrice));
                                     }
                                 }
                             }
@@ -48,11 +48,13 @@ namespace HW07_04.Booking.Com.Models
             }
 
         }
-        private int CalcPrice(DateTime arrive, DateTime leave, int numOfPers, int basePrice)
+
+        private static int CalcPrice(DateTime arrive, DateTime leave, int numOfPers, int basePrice)
         {
             int price = Convert.ToInt32((leave - arrive).TotalDays * basePrice / 5 + numOfPers * basePrice * 0.5);
             return price;
         }
+
         public string Purchase(DateTime arrive, DateTime leave, int person, int child)
         {
             if (j != 0)
@@ -60,12 +62,12 @@ namespace HW07_04.Booking.Com.Models
                 int a;
                 Console.WriteLine("\nChoose variant by pressing its number");
                 a = Convert.ToInt32(Console.ReadLine());
-                appArray[chosenApp[a - 1]].arriveDate = arrive;
-                appArray[chosenApp[a - 1]].leaveDate = leave;
-                appArray[chosenApp[a - 1]].numOfPerson = person;
-                appArray[chosenApp[a - 1]].numOfChild = child;
-                appArray[chosenApp[a - 1]].wholePrice = CalcPrice(arrive, leave, person, appArray[chosenApp[a - 1]].basePrice);
-                string result=appArray[chosenApp[a - 1]].ToString() + ", price - " + CalcPrice(arrive, leave, person, appArray[chosenApp[a - 1]].basePrice);
+                appArray[chosenApp[a - 1]].ArriveDate = arrive;
+                appArray[chosenApp[a - 1]].LeaveDate = leave;
+                appArray[chosenApp[a - 1]].NumOfPerson = person;
+                appArray[chosenApp[a - 1]].NumOfChild = child;
+                appArray[chosenApp[a - 1]].WholePrice = CalcPrice(arrive, leave, person, appArray[chosenApp[a - 1]].BasePrice);
+                string result=appArray[chosenApp[a - 1]].ToString() + ", price - " + CalcPrice(arrive, leave, person, appArray[chosenApp[a - 1]].BasePrice);
                 appArray[chosenApp[a - 1]] = default;
                 return result;
             }

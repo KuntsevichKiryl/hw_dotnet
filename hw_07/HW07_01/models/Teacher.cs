@@ -8,10 +8,10 @@ namespace HW07_01.models
 {
     public class Teacher : Person
     {
-        private string subject = "Csharp";
+        private readonly string _subject = "Csharp";
         public void Explain()
         {
-            Console.WriteLine("Our topic today is {0}. Explanation begins", subject);
+            Console.WriteLine("Our topic today is {0}. Explanation begins", _subject);
         }
     }
 }

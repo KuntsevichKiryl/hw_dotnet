@@ -18,11 +18,11 @@ namespace HW07_04.Booking.Com.Models
             bool check = false;
             for (int i = 0; i < persArray.Length; i++)
             {
-                if (name.Equals(persArray[i].name))
+                if (name.Equals(persArray[i].Name))
                 {
                     Console.WriteLine("Input password");
                     string pass = Console.ReadLine();
-                    if (pass.Equals(persArray[i].password))
+                    if (pass.Equals(persArray[i].Password))
                     {
                         check = true;
                         Console.WriteLine("\nWelcome {0}", name);
