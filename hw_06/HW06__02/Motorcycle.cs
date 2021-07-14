@@ -9,10 +9,45 @@ namespace HW06__02
     class Motorcycle
     {
         internal readonly Guid vin = Guid.NewGuid();
-        internal string model;
-        internal string manufact;
-        internal DateTime year = DateTime.Now;
-        internal uint run;
+        string _model;
+        internal string Model
+        {
+            get
+            {
+                return _model;
+            }
+            set
+            {
+                _model = value;
+            }
+        }
+        string _manufact;
+        internal string Manufact
+        {
+            get
+            {
+                return _manufact;
+            }
+            set
+            {
+                _manufact = value;
+            }
+        }
+
+        internal readonly DateTime year = DateTime.Now;
+        uint _run;
+        internal uint Run
+        {
+            get
+            {
+                return _run;
+            }
+            set
+            {
+                _run = value;
+            }
+        }
+
         internal Engine newEngine = new();
         internal class Engine
         {

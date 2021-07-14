@@ -14,11 +14,11 @@ namespace HW06__02
             {
                 newMoto[i] = new Motorcycle();
                 Console.WriteLine("\nМодель мотоцикла №{0}", i + 1);
-                newMoto[i].model = ReadArg();
+                newMoto[i].Model = ReadArg();
                 Console.WriteLine("Производитель мотоцикла");
-                newMoto[i].manufact = ReadArg();
+                newMoto[i].Manufact = ReadArg();
                 Console.WriteLine("Пробег");
-                newMoto[i].run = RunCheck();
+                newMoto[i].Run = RunCheck();
                 Console.WriteLine("Тип двигателя");
                 uint engType = EngineSelect();
 
@@ -47,7 +47,7 @@ namespace HW06__02
                 Console.WriteLine("\nМотоцикл №{0}", i + 1);
                 Console.WriteLine("Мотоцикл (Производитель): {0}, Модель: {1}, Vin Number(Идентификатор): {2}, Год выпуска: {3}, " +
                     "Пробег: {4} км, Тип двигателя: {5}, Двигатель(Объем): {6} куб.см, Мощность: {7} л/с",
-                    newMoto[i].manufact, newMoto[i].model, newMoto[i].vin, newMoto[i].year.Year, newMoto[i].run,
+                    newMoto[i].Manufact, newMoto[i].Model, newMoto[i].vin, newMoto[i].year.Year, newMoto[i].Run,
                     newMoto[i].newEngine.engineType, newMoto[i].newEngine.capacity, newMoto[i].newEngine.power);
             }
 
