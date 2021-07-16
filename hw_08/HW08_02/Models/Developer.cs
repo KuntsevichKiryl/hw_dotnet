@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HW08_01.Models
+namespace HW08_02.Models
 {
-    class Developer
+    abstract class Developer
     {
         Guid id = new Guid();
         string _companyName = "Macrohard";
